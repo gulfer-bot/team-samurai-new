@@ -1,72 +1,143 @@
-export const teamSamurai = {
-  teamName: "TEAM SAMURAI",
-  game: "BGMI",
-  tier: "T2 Esports",
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Samurai</title>
+  <link rel="stylesheet" href="style.css">
 
-  management: {
-    owner: {
-      name: "Raj",
-      instagram: "raj_odedra.00",
-      phone: "6356117045",
-    },
-    coOwner: {
-      name: "Karan",
-      instagram: "k_a_r_a_n_k_u_s_h_w_a_h_a",
-      phone: "8368245973",
-    },
-    manager: {
-      name: "Ultron",
-      instagram: "_ultron.y",
-    },
-  },
+  <style>
+    body {
+      background: #0a0a0a;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
 
-  roster: [
-    {
-      name: "Pahadi Jassu",
-      role: "Assaulter",
-      uid: "55592786109",
-      ign: "TSxBLACKyyy",
-      discord: "@pahadii jassu",
-      instagram: "jass_sekhon_5911",
-    },
-    {
-      name: "Tankerz",
-      role: "Support",
-      uid: "5775954453",
-      ign: "TSxTankerz",
-      discord: "@TSxTankerz",
-    },
-    {
-      name: "Raj (RXJ)",
-      role: "Sniper",
-      uid: "55720702033",
-      ign: "TSxRXJ",
-      discord: "@TSxRAJ",
-    },
-    {
-      name: "ICONIC",
-      role: "Entry Fragger",
-      uid: "55582848562",
-      ign: "TSxIC0NIC",
-      discord: "@ICONIC",
-      instagram: "0p_Iconic",
-      tier: "T1 Player",
-    },
-    {
-      name: "Ajay Kumar",
-      role: "IGL",
-      uid: "55572747205",
-      ign: "RFTCxAJAY",
-      discord: "@Ajaykumar",
-      instagram: "ajay_555554",
-    },
-    {
-      name: "Bilal",
-      role: "Assaulter",
-      uid: "5186906756",
-      ign: "TSxBilalOP",
-      discord: "@BILAL",
-      instagram: "yng.bilal",
-    },
-  ],
-};
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #333;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      border-color: #00ffcc;
+    }
+
+    .role {
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-top: 50px;
+    }
+
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>TEAM SAMURAI ⚔️</h1>
+
+<div class="team-container">
+
+  <div class="card">
+    <h2>Pahadi Jassu</h2>
+    <p class="role">Assaulter</p>
+    <p><b>IGN:</b> TSxBLACKyyy</p>
+    <p><b>UID:</b> 55592786109</p>
+    <p><b>Discord:</b> @pahadii jassu</p>
+    <p><b>Instagram:</b> <a href="https://www.instagram.com/jass_sekhon_5911" target="_blank">Profile</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Tankerz</h2>
+    <p class="role">Support</p>
+    <p><b>IGN:</b> TSxTankerz</p>
+    <p><b>UID:</b> 5775954453</p>
+    <p><b>Discord:</b> @TSxTankerz</p>
+  </div>
+
+  <div class="card">
+    <h2>Raj (RXJ)</h2>
+    <p class="role">Sniper</p>
+    <p><b>IGN:</b> TSxRXJ</p>
+    <p><b>UID:</b> 55720702033</p>
+    <p><b>Discord:</b> @TSxRAJ</p>
+  </div>
+
+  <div class="card">
+    <h2>ICONIC (T1 Player)</h2>
+    <p class="role">Entry Fragger</p>
+    <p><b>IGN:</b> TSxIC0NIC</p>
+    <p><b>UID:</b> 55582848562</p>
+    <p><b>Discord:</b> @ICONIC</p>
+    <p><b>Instagram:</b> 0p_Iconic</p>
+  </div>
+
+  <div class="card">
+    <h2>Ajay Kumar (IGL)</h2>
+    <p class="role">IGL</p>
+    <p><b>IGN:</b> RFTCxAJAY</p>
+    <p><b>UID:</b> 55572747205</p>
+    <p><b>Discord:</b> @Ajaykumar</p>
+    <p><b>Instagram:</b> ajay_555554</p>
+  </div>
+
+  <div class="card">
+    <h2>Bilal</h2>
+    <p class="role">Assaulter</p>
+    <p><b>IGN:</b> TSxBilalOP</p>
+    <p><b>UID:</b> 5186906756</p>
+    <p><b>Discord:</b> @BILAL</p>
+    <p><b>Instagram:</b> yng.bilal</p>
+  </div>
+
+</div>
+
+<div class="section">
+  <h1>Management 👑</h1>
+
+  <div class="team-container">
+
+    <div class="card">
+      <h2>Owner - Raj</h2>
+      <p><b>Instagram:</b> raj_odedra.00</p>
+      <p><b>Phone:</b> 6356117045</p>
+    </div>
+
+    <div class="card">
+      <h2>Co-Owner - Karan</h2>
+      <p><b>Instagram:</b> k_a_r_a_n_k_u_s_h_w_a_h_a</p>
+      <p><b>Phone:</b> 8368245973</p>
+    </div>
+
+    <div class="card">
+      <h2>Manager - Ultron</h2>
+      <p><b>Instagram:</b> <a href="https://www.instagram.com/_ultron.y" target="_blank">Profile</a></p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
