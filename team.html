@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Team Samurai</title>
+  <title>TEAM SAMURAI</title>
+
   <style>
     body {
       background: #0a0a0a;
@@ -12,12 +13,12 @@
 
     h1 {
       margin: 30px;
-      font-size: 40px;
+      font-size: 42px;
     }
 
     .container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
       padding: 20px;
     }
@@ -25,23 +26,45 @@
     .box {
       background: #111;
       padding: 40px;
-      border-radius: 12px;
+      border-radius: 15px;
       border: 1px solid #333;
-      transition: 0.3s;
       cursor: pointer;
+      transition: 0.3s;
     }
 
     .box:hover {
-      transform: scale(1.05);
+      transform: scale(1.08);
       border-color: cyan;
+      box-shadow: 0 0 15px cyan;
     }
 
     a {
       text-decoration: none;
       color: white;
-      font-size: 20px;
       font-weight: bold;
     }
+
+    /* DETAIL PANEL */
+    .details {
+      display: none;
+      margin: 30px auto;
+      width: 320px;
+      background: #111;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #333;
+    }
+
+    .details:target {
+      display: block;
+    }
+
+    .close {
+      display: block;
+      margin-top: 15px;
+      color: red;
+    }
+
   </style>
 </head>
 
@@ -49,15 +72,103 @@
 
 <h1>TEAM SAMURAI ⚔️</h1>
 
+<!-- PLAYER BOXES -->
 <div class="container">
 
-  <a href="jassu.html"><div class="box">Pahadi Jassu</div></a>
-  <a href="tankerz.html"><div class="box">Tankerz</div></a>
-  <a href="raj.html"><div class="box">Raj (RXJ)</div></a>
-  <a href="iconic.html"><div class="box">ICONIC</div></a>
-  <a href="ajay.html"><div class="box">Ajay Kumar (IGL)</div></a>
-  <a href="bilal.html"><div class="box">Bilal</div></a>
+  <a href="#jass"><div class="box">Jass Sekhon</div></a>
+  <a href="#karan"><div class="box">Karan (Co-Owner)</div></a>
+  <a href="#raj"><div class="box">Raj (Owner)</div></a>
+  <a href="#abhyudya"><div class="box">Abhyudya (ICONIC)</div></a>
+  <a href="#ajay"><div class="box">Ajay Kumar (IGL)</div></a>
+  <a href="#bilal"><div class="box">Bilal</div></a>
+  <a href="#ultron"><div class="box">Ultron (Manager)</div></a>
 
+</div>
+
+<!-- PLAYER DETAILS -->
+
+<div id="jass" class="details">
+  <h2>Jass Sekhon</h2>
+  <p>IGN: TSxBLACKyyy</p>
+  <p>UID: 55592786109</p>
+  <p>Discord: @pahadii jassu</p>
+  <p>WhatsApp: 7009971273</p>
+  <p><a href="https://www.instagram.com/jass_sekhon_5911">Instagram</a></p>
+  <h3>Achievements</h3>
+  <p>50K Grand Finalist</p>
+  <p>Current 50K Max Esports</p>
+  <p>20K RVNC</p>
+  <p>15K Winner</p>
+  <a href="#" class="close">Close ❌</a>
+</div>
+
+<div id="karan" class="details">
+  <h2>Karan (Co-Owner)</h2>
+  <p>Instagram: k_a_r_a_n_k_u_s_h_w_a_h_a</p>
+  <p>WhatsApp: 8368245973</p>
+  <h3>Achievements</h3>
+  <p>No official achievements</p>
+  <a href="#" class="close">Close ❌</a>
+</div>
+
+<div id="raj" class="details">
+  <h2>Raj (Owner)</h2>
+  <p>Instagram: raj_odedra.00</p>
+  <p>WhatsApp: 6356117045</p>
+  <h3>Achievements</h3>
+  <p>No official achievements</p>
+  <a href="#" class="close">Close ❌</a>
+</div>
+
+<div id="abhyudya" class="details">
+  <h2>Abhyudya (ICONIC)</h2>
+  <p>IGN: TSxIC0NIC</p>
+  <p>UID: 55582848562</p>
+  <p>Discord: @ICONIC</p>
+  <p>WhatsApp: 9015903755</p>
+  <p>Instagram: 0p_Iconic</p>
+  <h3>Achievements</h3>
+  <p>T1 Player</p>
+  <p>50K Semi Finals</p>
+  <p>30K Grand Finals</p>
+  <p>BGIS Round 2</p>
+  <a href="#" class="close">Close ❌</a>
+</div>
+
+<div id="ajay" class="details">
+  <h2>Ajay Kumar (IGL)</h2>
+  <p>IGN: RFTCxAJAY</p>
+  <p>UID: 55572747205</p>
+  <p>Discord: @Ajaykumar</p>
+  <p>WhatsApp: 9958378975</p>
+  <p>Instagram: ajay_555554</p>
+  <h3>Achievements</h3>
+  <p>20K RVNC</p>
+  <p>50K Max Esports</p>
+  <a href="#" class="close">Close ❌</a>
+</div>
+
+<div id="bilal" class="details">
+  <h2>Bilal</h2>
+  <p>IGN: TSxBilalOP</p>
+  <p>UID: 5186906756</p>
+  <p>Discord: @BILAL</p>
+  <p>WhatsApp: 9265037183</p>
+  <p>Instagram: yng.bilal</p>
+  <h3>Achievements</h3>
+  <p>50K Max Esports (Current)</p>
+  <p>50K Grand Finals</p>
+  <p>20K RVNC</p>
+  <a href="#" class="close">Close ❌</a>
+</div>
+
+<div id="ultron" class="details">
+  <h2>Ultron (Manager)</h2>
+  <p><a href="https://www.instagram.com/_ultron.y">Instagram</a></p>
+  <p>WhatsApp: 9229677974</p>
+  <h3>Achievements</h3>
+  <p>No official achievements</p>
+  <a href="#" class="close">Close ❌</a>
 </div>
 
 </body>
