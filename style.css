@@ -1,0 +1,137 @@
+/* ===== GLOBAL RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Orbitron', sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top, #2a1f1b, #120d0b);
+  color:#f5efe6;
+  overflow-x:hidden;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#f5efe6;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#e6b98c;
+}
+
+/* ===== HERO ===== */
+.hero{
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:60px;
+  color:#e6b98c;
+  animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+
+/* ===== GRID ===== */
+.grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  padding:40px;
+}
+
+/* ===== CARD ===== */
+.card{
+  width:260px;
+  padding:20px;
+  background:rgba(255,255,255,0.05);
+  border-radius:15px;
+  cursor:pointer;
+  transition:0.4s;
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.08);
+  position:relative;
+  overflow:hidden;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.03);
+  border-color:#e6b98c;
+}
+
+/* ===== PROFILE ===== */
+.profile{
+  text-align:center;
+  padding:50px;
+}
+
+.profile img{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:20px;
+}
+
+.link{
+  display:block;
+  margin:10px;
+  color:#e6b98c;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+  padding:10px 20px;
+  background:#e6b98c;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* ===== SECTION ===== */
+section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  padding:30px;
+  text-align:center;
+  opacity:0.6;
+}
+
+/* ===== SCROLL ANIMATION ===== */
+.hidden{
+  opacity:0;
+  transform:translateY(40px);
+  transition:0.8s;
+}
+
+.show{
+  opacity:1;
+  transform:translateY(0);
+}
